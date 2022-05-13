@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 //Angular Material Imports
 import { MatSliderModule } from '@angular/material/slider'
+import { NgxPermissionsModule } from 'ngx-permissions';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MatSliderModule } from '@angular/material/slider'
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatSliderModule
+    MatSliderModule,
+    NgxPermissionsModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
